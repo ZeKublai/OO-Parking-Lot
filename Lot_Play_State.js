@@ -46,7 +46,7 @@ class Lot_Play_State extends Game_State {
 
                             load_form('forms/charge_list.html', () => {
                                 this.total_earnings = document.getElementById('total_earnings');
-                                this.total_earnings.textContent = `₱ ${this.parking_lot.total_earnings}`;
+                                this.total_earnings.textContent = `₱ ${parseInt(this.parking_lot.total_earnings).toLocaleString()}`;
                                 this.set_charges();
                                 this.ready = true;
                             }, 'play_output');

@@ -105,7 +105,7 @@ class Home_State extends Game_State {
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mt-1">${item.parking_lot_name}</h5>
           </div>
-          <p class="mb-1">Total Earnings: ₱ ${item.total_earnings.toLocaleString()}</p>
+          <p class="mb-1">Total Earnings: ₱ ${parseInt(item.total_earnings).toLocaleString()}</p>
         </div>
         <div class="col d-flex justify-content-between">
           <div class="btn-group w-100" role="group" aria-label="Basic example">${buttons}</div>
