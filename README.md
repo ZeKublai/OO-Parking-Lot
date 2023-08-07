@@ -1,10 +1,14 @@
 # Object-Oriented Mall Parking Allocation System
 
-![Object-Oriented Mall](mall_image.jpg)
+![Object-Oriented Mall](sprites/empty.png))
+![Object-Oriented Mall](sprites/entry_point.png))
+![Object-Oriented Mall](sprites/slot_s.png))
+![Object-Oriented Mall](sprites/slot_m.png))
+![Object-Oriented Mall](sprites/slot_l.png))
 
 ## Introduction
 
-Welcome to the Object-Oriented Mall Parking Allocation System, a project developed for Ayala Corp. to streamline parking management for their new malling complex, the Object-Oriented Mall. This system allows efficient allocation of parking spaces, convenient vehicle entry and exit, and accurate tracking of parking records.
+Welcome to the Object-Oriented Mall Parking Allocation System, a simple yet efficient solution tailored for Ayala Corp's fictional malling complex, the Object-Oriented Mall. This system streamlines parking management, making vehicle entry, exit, and record tracking a breeze.
 
 ## Setup
 
