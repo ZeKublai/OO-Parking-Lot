@@ -39,7 +39,7 @@ Welcome to the Object-Oriented Mall Parking Allocation System, a simple yet effi
 
 ## Usage
 
-1. Access the project through your web browser: `http://localhost/OOPark/`.
+1. Access the project through your web browser: `http://localhost/OO-Parking-Lot/`.
 2. Home Page:
    - Edit Mode: Customize parking lot's entry points, slots, or rename the parking lot.
    - Play Mode: Park and unpark vehicles using simulated time.
