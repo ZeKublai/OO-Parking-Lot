@@ -1,0 +1,54 @@
+<div class="card">
+  <div class="card-header">
+    <em>Click on an entry point to park a vehicle or click a vehicle to unpark it</em>
+  </div>
+  <div class="card-body text-bg-secondary">
+    <h6 class="card-title">Simulated Date & Time</h6>
+    <h4 class="card-title" id="time_output">2069-04-20 12:12:12</h4>
+    <div class="row my-3">
+      <div class="col-4"><input type="date" class="form-control" id="date_input"></div>
+      <div class="col-4"><input type="time" class="form-control" id="time_input"></div>
+      <div class="col-4">
+        <button class="btn btn-light mb-1 w-100" onclick="state.set_date_time()" id="button_datetime">Set Date Time</button>
+      </div>
+    </div>
+    <div class="row my-2">
+      <div class="col-8">
+        <label for="time_speed" class="form-label">Clock Speed</label>
+        <input type="range" class="form-range" id="time_speed" min="1" max="100" value="50" onchange="state.set_clock_speed(this.value)">
+      </div>
+      <div class="col-4">
+        <button class="btn btn-light mb-1 w-100 h-100" onclick="state.toggle_time_stop()" id="time_stop_toggle" value="false">Play</button>
+      </div>
+    </div>
+    <p class="mt-1 mb-0"><em>This date & time will be used for parking or unparking vehicles.</em></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item text-bg-dark">
+      <h6 class="card-title">Show Nearest Vacant Slot</h6>
+      <div class="row mb-2">
+        <div class="col">
+          <div class="input-group">
+            <span class="input-group-text">Length</span>
+            <input type="number" class="form-control" id="slot_length" value="1">
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <span class="input-group-text">Width</span>
+            <input type="number" class="form-control" id="slot_width" value="1">
+          </div>
+        </div>
+        <div class="col">
+          <button class="btn btn-outline-info w-100" id="distance_toggle" onclick="state.toggle_distances()">
+            <img src="./sprites/distance_lines_disabled.svg" class="icon-link icon-link-hover" style="color: white;" width="25" height="25">
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div id="play_output"></div>
+  <div class="card-footer">
+    <button class="btn btn-secondary w-100" onclick="home()">Go Back</button>
+  </div>
+</div>

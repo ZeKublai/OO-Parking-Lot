@@ -1,0 +1,65 @@
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <h5 class="card-title" id="vehicle_name">Vehicle Name</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary" id="vehicle_entry_datetime">First Entry Date & Time</h6>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col">Previous Hours:</div>
+      <div class="col text-end" id="previous_hours">0</div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col">Previous Charges:</div>
+      <div class="col text-end" id="previous_charges">₱ 0</div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <strong>
+      <div class="row">
+        <div class="col">Current Entry Date & Time:</div>
+        <div class="col text-end" id="charge_entry_datetime"></div>
+      </div>
+    </strong>
+  </li>
+  <li class="list-group-item">
+    <em>
+      <div class="row">
+        <div class="col">Current Breakdown:</div>
+        <div class="col text-end" id="parking_time_breakdown">1 day and 5 hours</div>
+      </div>
+    </em>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col">Fixed Hours:</div>
+      <div class="col text-end" id="fixed_cost">₱ 0</div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col">Additional Hours:</div>
+      <div class="col text-end" id="additional_costs">(0×0) = ₱ 0</div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col">24-Hour Chunks:</div>
+      <div class="col text-end" id="day_costs">(0×0) = ₱ 0</div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <strong>
+      <div class="row">
+        <div class="col">Estimated Total:</div>
+        <div class="col text-end" id="estimated_total">₱ 0</div>
+      </div>
+    </strong>
+  </li>
+  <li class="list-group-item">
+    <button class="btn btn-primary mb-1 w-100" onclick="state.eject_vehicle()" data-original-text="Unpark Vehicle" id="button_unpark">
+      Unpark Vehicle
+    </button>
+  </li>
+</ul>

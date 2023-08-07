@@ -1,0 +1,48 @@
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <h5 class="card-title">Select an Existing Vehicle</h5>
+    <div class="row mb-2">
+      <div class="col-8">
+        <div class="input-group">
+          <span class="input-group-text">Vehicles</span>
+          <select class="form-select" size="3" aria-label="Size 3 select example" id="vehicle_select"></select>
+        </div>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary mb-1 w-100 h-100" onclick="state.park_existing()" data-original-text="Park Existing Vehicle" id="button_existing">
+          Park Existing Vehicle
+        </button>
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <h5 class="card-title">Park New Vehicle</h5>
+    <div class="row mb-2">
+      <div class="col-8">
+        <div class="input-group flex-nowrap mb-3">
+          <span class="input-group-text">Name</span>
+          <input type="text" class="form-control" placeholder="Name" id="vehicle_name">
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="input-group">
+              <span class="input-group-text">Length</span>
+              <input type="number" class="form-control" id="vehicle_length" value="1">
+            </div>
+          </div>
+          <div class="col">
+            <div class="input-group">
+              <span class="input-group-text">Width</span>
+              <input type="number" class="form-control" id="vehicle_width" value="1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary mb-1 w-100 h-100" onclick="state.park_new()" data-original-text="Park New Vehicle" id="button_new">
+          Park New Vehicle
+        </button>
+      </div>
+    </div>
+  </li>
+</ul>

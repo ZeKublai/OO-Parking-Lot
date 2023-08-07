@@ -1,0 +1,51 @@
+<div class="card">
+  <div class="card-header">
+    Edit Parking Lot
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-9">
+        <div class="input-group flex-nowrap mb-3">
+          <span class="input-group-text">Name</span>
+          <input type="text" class="form-control" placeholder="Name" id="parking_lot_name">
+        </div>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-outline-info w-100" id="distance_toggle" onclick="state.toggle_distances()">
+          <img src="./sprites/distance_lines_disabled.svg" class="icon-link icon-link-hover" style="color: white;" width="25" height="25">
+        </button>
+      </div>
+    </div>
+    <label for="grid_mode" class="form-label"><strong>Select and click on the grid to add slots and entry points</strong></label>
+    <div class="btn-group" role="group">
+      <input type="radio" class="btn-check" name="grid_mode" id="btnradio1" autocomplete="off" checked value="0">
+      <label class="btn btn-outline-danger" for="btnradio1">
+        <div class="my-1">Erase</div><img src="./sprites/eraser-64.ico" class="rounded my-1" width="50" height="50">
+      </label>
+
+      <input type="radio" class="btn-check" name="grid_mode" id="btnradio2" autocomplete="off" value="E">
+      <label class="btn btn-outline-primary" for="btnradio2">
+        <div class="my-1">Entry Point</div><img src="./sprites/entry_point.png" class="rounded my-1">
+      </label>
+
+      <input type="radio" class="btn-check" name="grid_mode" id="btnradio3" autocomplete="off" value="S">
+      <label class="btn btn-outline-secondary" for="btnradio3">
+        <div class="my-1">Small Slot</div><img src="./sprites/slot_s.png" class="rounded my-1">
+      </label>
+
+      <input type="radio" class="btn-check" name="grid_mode" id="btnradio4" autocomplete="off" value="M">
+      <label class="btn btn-outline-secondary" for="btnradio4">
+        <div class="my-1">Medium Slot</div><img src="./sprites/slot_m.png" class="rounded my-1">
+      </label>
+
+      <input type="radio" class="btn-check" name="grid_mode" id="btnradio5" autocomplete="off" value="L">
+      <label class="btn btn-outline-secondary" for="btnradio5">
+        <div class="my-1">Large Slot</div><img src="./sprites/slot_l.png" class="rounded my-1">
+      </label>
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary mb-1 w-100" onclick="state.save_lot()" data-original-text="Save" id="button_save">Save</button>
+    <button class="btn btn-secondary w-100" onclick="home()">Go Back</button>
+  </div>
+</div>
