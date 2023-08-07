@@ -1,10 +1,17 @@
 # Object-Oriented Mall Parking Allocation System
 
-![Object-Oriented Mall](mall_image.jpg)
+![Object-Oriented Mall](sprites/empty.png)
+![Object-Oriented Mall](sprites/entry_point.png)
+![Object-Oriented Mall](sprites/slot_s.png)
+![Object-Oriented Mall](sprites/slot_m.png)
+![Object-Oriented Mall](sprites/slot_l.png)
+![Object-Oriented Mall](sprites/vehicle_s.png)
+![Object-Oriented Mall](sprites/vehicle_m.png)
+![Object-Oriented Mall](sprites/vehicle_l.png)
 
 ## Introduction
 
-Welcome to the Object-Oriented Mall Parking Allocation System, a project developed for Ayala Corp. to streamline parking management for their new malling complex, the Object-Oriented Mall. This system allows efficient allocation of parking spaces, convenient vehicle entry and exit, and accurate tracking of parking records.
+Welcome to the Object-Oriented Mall Parking Allocation System, a simple yet efficient solution tailored for Ayala Corp's fictional malling complex, the Object-Oriented Mall. This system streamlines parking management, making vehicle entry, exit, and record tracking a breeze.
 
 ## Setup
 
@@ -20,7 +27,7 @@ Welcome to the Object-Oriented Mall Parking Allocation System, a project develop
 - Supports virtually unlimited entry points within the grid limit.
 - Park and unpark vehicles using a simulated date and time.
 - Integrated database implementation for accurate record-keeping.
-- Nearest slot viewer assists with parking allocation decisions.
+- Nearest slot viewer assists for automated parking allocation decisions.
 - Basic p5.js UI enhanced with Bootstrap theming.
 
 ## Installation
@@ -32,22 +39,22 @@ Welcome to the Object-Oriented Mall Parking Allocation System, a project develop
 
 ## Usage
 
-1. Access the project through your web browser: `http://localhost/OOPark/`.
+1. Access the project through your web browser: `http://localhost/OO-Parking-Lot/`.
 2. Home Page:
    - Edit Mode: Customize parking lot's entry points, slots, or rename the parking lot.
    - Play Mode: Park and unpark vehicles using simulated time.
-   - Reset Records: Wipe parking lot's records and reset total earnings to 0 (entry points and slots remain).
+   - Reset Records: Wipe parking lot's records and reset total earnings to 0 (entry points and slots remain intact).
 
 3. Play Mode:
    - Simulated Time: Input the date and time to override simulated time. Play/pause button controls time progression. Clock speed slider adjusts simulation speed.
    - Show Nearest Vacant Slot: Set vehicle dimensions to visualize the nearest available slot.
    - Parking: Click on an entry point to park a vehicle. Select existing vehicle from the database or add a new one (with a cool name!).
-   - Unparking: Click on a parked vehicle to view estimated costs and parking duration. Unpark to receive fictional currency.
+   - Unparking: Click on a parked vehicle to view estimated costs and parking duration. Unpark to receive fictional currency. Press play on the date & time simulator to witness the total cost accumulating, adding an element of playful realism to the experience.
 
 ## Limitations and Possible Improvements
 
 - The parking lot size is currently limited to 15x15 due to UI constraints, but the database can handle larger sizes.
 - Potential UI enhancements and functionalities, such as adding/deleting parking lots, vehicle management, and comprehensive parking record viewing.
-- Backend script complexity could be improved with OOP data containers, especially if more features are added in the future.
+- Backend script complexity could be improved with OOP data containers, especially if more complex features are added in the future.
 
 Feel free to explore and contribute to make this parking allocation system even better!
